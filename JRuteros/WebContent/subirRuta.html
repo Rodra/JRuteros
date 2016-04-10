@@ -1,0 +1,56 @@
+<HTML>
+<HEAD>
+<TITLE>Subir Ruta Nueva</TITLE>
+</HEAD>
+<BODY>
+<h2> Ingrese los datos de la ruta nueva</h2>
+<FORM ACTION="subirRutaSuccess.html" METHOD="GET">
+Nombre <br>
+<input type="text" name="name" required><br><br>
+Descripcion <br>
+<input type="text" name="desc" required><br><br>
+Privacidad <br>
+<input type="radio" name="priv" value="hom" required>Publica
+<input type="radio" name="priv" value="fem" required>Privada<br><br>
+Recorrido <br>
+<input type="file" name="reco" accept="image/*"><br><br>
+Formato <br>
+<input type="radio" name="form" value="ida" required>Solo Ida
+<input type="radio" name="form" value="circ" required>Circular<br><br>
+Extension <br>
+<input type="number" name="fnac" required>km<br><br>
+Dificultad <br>
+<input type="radio" name="dif" value="fac" required>Facil
+<input type="radio" name="dif" value="mod" required>Moderado
+<input type="radio" name="dif" value="dif" required>Dificil
+<input type="radio" name="dif" value="muyD" required>Muy Dificil
+<input type="radio" name="dif" value="soloE" required>Solo Expertos<br><br>
+Actividad <br>
+<select name="actividad">
+  <option value="mb">Mountain Bike</option>
+  <option value="cicl">Ciclismo</option>
+  <option value="ciclT">Cicloturismo</option>
+  <option value="send">Senderismo</option>
+  <option value="cpm">Carrera por Montaña</option>
+  <option value="alp">Alpinismo</option>
+  <option value="moto">Motociclismo</option>
+  <option value="cuat">Cuatriciclo</option>
+  <option value="esqui">Esqui</option>
+  <option value="kayac">Kayac</option>
+  <option value="vela">Vela</option>
+  <option value="cab">A Caballo</option>
+</select><br><br>
+Tiempo Estimado <br>
+<input type="number" name="tiempo" required> min<br><br>
+Fecha de Realizacion <br>
+<input type="date" name="fecha" required><br><br>
+Fotos <br>
+<input type="file" name="reco" accept="image/*"><br><br>
+<INPUT TYPE="submit" NAME="visitar" VALUE="Aceptar">
+<input type="reset" value="Cancelar"><br>
+</FORM>
+<FORM ACTION="userView.html" METHOD="GET">
+<INPUT TYPE="submit" NAME="visitar" VALUE="Volver">
+</FORM>
+</BODY>
+</HTML>

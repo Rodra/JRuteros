@@ -27,23 +27,21 @@ public class LoginUsr extends HttpServlet{
 	public void doGet (HttpServletRequest req, HttpServletResponse res) throws 
 		ServletException, IOException {
 		
+		okUser = false;
+		okAdmin = false;
+		
 		user=req.getParameter("user");
 		pass=req.getParameter("pass");
 		
 				
 		if(logins.containsKey("user")){
-			if (logins.get("user").equals(user)){
-				if (logins.get("userPass").equals(pass)){
-					okUser = true;
-				}
-			}
-			else{
-				if (logins.get("admin").equals(user)){
-					if(logins.get("adminPass").equals(pass)){
-						okAdmin = true;
-					}
-				}
-			}
+			
+			if (logins.get("user").equals(user) && (logins.get("userPass").equals(pass))) okUser = true;
+						
+			else
+				
+				if ((logins.get("admin").equals(user)) && (logins.get("adminPass").equals(pass))) okAdmin = true;	
+			
 		}
 
 		

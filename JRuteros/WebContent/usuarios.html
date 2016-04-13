@@ -1,0 +1,64 @@
+<HTML>
+<HEAD>
+<TITLE>Administrador de Usuarios</TITLE>
+<style>
+
+table, th, td {
+   border: 1px solid black;
+}
+
+</style>
+
+</HEAD>
+<BODY>
+<h2> Menu de Opciones</h2>
+<a href="usuarios.html">Usuarios</a><br>
+<a href="actividades.html">Actividades</a><br>
+<a href="login.html">Salir</a><br>
+
+
+<p> Ordenar por:
+
+<form action="#">
+
+	<select name="ordernarPor">
+	
+		<option value="nombre">Nombre</option>
+		<option value="fechaReg">Fecha de Registro</option>
+	
+	</select>
+
+</form>
+
+</p>
+
+<table>
+
+	<tr>
+	
+		<td>Nombre de Usuario</td>
+		<td>Estado actual</td>
+		<td>Acciones</td>
+	
+	</tr>
+
+	<tr>
+	
+		<td>Nicolas</td>
+		<td>Habilitado</td>
+		<td><button> Deshabilitar </button></td>
+	
+	</tr>
+	
+	<tr>
+	
+		<td>Pepe</td>
+		<td>Deshabilitado</td>
+		<td><button> habilitar </button></td>
+	
+	</tr>
+
+</table>
+
+</BODY>
+</HTML>
